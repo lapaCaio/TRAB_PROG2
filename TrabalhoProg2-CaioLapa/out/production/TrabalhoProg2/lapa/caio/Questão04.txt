@@ -1,0 +1,6 @@
+Se tentarmos compilar e executar a classe TesteExcecao, será impresso "try", "catch" e "finally" e após isso uma exceção
+ será lançada e o programa será interrompido sem imprimir "fim".
+
+O método teste() é chamado no bloco try e, como ele tem a declaração "throws MinhaExcecao", a exceção é lançada. Como a
+classe MinhaExcecao é filha de Exception, o bloco catch é executado. O finally é executado depois de catch e dentro dele
+temos a instrução "throw me" que lança a exceção armazenada na variável me.
